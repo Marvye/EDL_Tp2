@@ -119,7 +119,7 @@ class GumballMachine
 	    
 	}
 	
-	public function UpdateP($nom, $prenom , $date_naissance,$lieu)
+	public function UpdateP($bdd, $nom, $prenom , $date_naissance,$lieu)
 	{
 	    try
             {
