@@ -67,11 +67,11 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     { //ici  	        $sql = "INSERT INTO cours (intitule, duree, id_prof) VALUES ('$intitule','$duree', '$id_prof')";
 
 
-        $max__id1=$this->gumballMachineInstance->GetLastIDP();
+        $max__id1=$this->gumballMachineInstance->GetLastIDC();
         $this->assertContains("good job",$this->gumballMachineInstance->InsertC($this->intitule1,$this->duree1,$this->gumballMachineInstance->GetIdP('XXX2','YYY2')));
         $this->assertContains("good job",$this->gumballMachineInstance->InsertC($this->intitule2,$this->duree2,$this->gumballMachineInstance->GetIdP('XXX1','YYY1')));
-        //his->assertEquals(true,$this->gumballMachineInstance->InsertP($this->gumballMachineInstance->getDB(),$this->nom2,$this->prenom2,$this->date_naissance2,$this->lieu_naissance2));
-        $max__id2=$this->gumballMachineInstance->GetLastIDP();
+        //this->assertEquals(true,$this->gumballMachineInstance->InsertP($this->gumballMachineInstance->getDB(),$this->nom2,$this->prenom2,$this->date_naissance2,$this->lieu_naissance2));
+        $max__id2=$this->gumballMachineInstance->GetLastIDC();
         $this->assertEquals($max__id1+2,$max__id2);
     }
     public function testAffichageCoursAPI()
