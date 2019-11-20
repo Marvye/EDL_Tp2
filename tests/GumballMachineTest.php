@@ -11,6 +11,16 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     private $prenom="yyy1"; // a changer
     private $date_naissance="29-09-1980"; // a changer
     private $lieu_naissance="ZZZ1"; // a changer
+
+
+    //prof
+        private $nom2="XXX2"; // a changer
+        private $prenom2="yyy2"; // a changer
+        private $date_naissance2="30-10-1981"; // a changer
+        private $lieu_naissance2="ZZZ2"; // a changer
+
+
+
     // cours
     private $intitule="***"; //a remplir
     private $duree="***";    //a remplir
@@ -28,9 +38,9 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     public function testInsertP()
     {
         $max__id1=$this->gumballMachineInstance->GetLastIDP();
-        $this->assertEquals(true,$this->gumballMachineInstance->InsertP($this->gumballMachineInstance->getDB(),$this->nom,$this->prenom,$this->date_naissance,$this->lieu_naissance));
+        $this->assertEquals(true,$this->gumballMachineInstance->InsertP($this->gumballMachineInstance->getDB(),$this->nom2,$this->prenom2,$this->date_naissance2,$this->lieu_naissance2));
         $max__id2=$this->gumballMachineInstance->GetLastIDP();
-        $this->assertEquals($max__id1+1,$max__id2);
+        $this->assertEquals($max__id1+2,$max__id2);
     }
     public function testAffichageProfAPI()
     {
