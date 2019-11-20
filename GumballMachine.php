@@ -119,20 +119,14 @@ class GumballMachine
 	    
 	}
 	
-	public function UpdateP($bdd, $nom, $prenom , $date_naissance,$lieu)
+	public function UpdateP($bdd, $nom, $prenom , $date_naissance,$lieu,$id)
 	{
 	    try
             {
                $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 //$sql = "INSERT INTO prof (nom, prenom, date_naissance, lieu_naissance) VALUES ('$nom','$prenom', '$date_naissance','$lieu')";
-               $sql = $bdd->exec('UPDATE prof SET nom = $nom, prenom = $prenom, date_naissance = $date_naissance, lieu = $lieu  WHERE id = $id');
-                      $req->execute(array(
-                        'nom' => $_POST['nom'],
-                        'prenom' => $_POST['prenom'],
-                        'date_naissance' => $_POST['date_naissance'],
-                        'lieu' => $_POST['lieu'],
-                        'id' => $_GET['edit']
-                        ));
+               $stmt = $bdd->prepare('UPDATE prof SET nom = ?, prenom = ?, date_naissance = ?, lieu = ?  WHERE id = ?');
+               $stmt->execute(array($nom, $prenom, $date_naissancen $lieu))
                return true;
             }
             catch(PDOException $e)
