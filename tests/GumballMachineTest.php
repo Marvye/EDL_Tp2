@@ -7,10 +7,10 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
 {
     public $gumballMachineInstance;
     //prof
-    private $nom="x_test_tp"; // a changer
-    private $prenom="y_test_tp"; // a changer
-    private $date_naissance="0000-00-00"; // a changer
-    private $lieu_naissance="XY"; // a changer
+    private $nom="XXX1"; // a changer
+    private $prenom="yyy1"; // a changer
+    private $date_naissance="29-09-1980"; // a changer
+    private $lieu_naissance="ZZZ1"; // a changer
     // cours
     private $intitule="***"; //a remplir
     private $duree="***";    //a remplir
