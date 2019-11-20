@@ -79,7 +79,7 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
         /*� completer*/
     }
 
-   public function testInsertP()
+   public function testUpdateP()
    {
         $this->gumballMachineInstance->UpdateP('lekemo','Rosabelle','16-11-1999','Douala');
    }
