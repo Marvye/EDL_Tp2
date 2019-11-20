@@ -3,14 +3,17 @@
 class GumballMachine
 {
 
+
+
+
 	private $gumballs;
 	
 	private $bdd;
-	/* Paramètre de connexion à la base de données*/
+	/* Paramï¿½tre de connexion ï¿½ la base de donnï¿½es*/
 	private $servername="localhost";
-	private $db_name="mydb1"; //a remplir
-	private $db_user="myuser1"; //a remplir
-	private $db_pass="mypassword1"; //a remplir
+	private $db_name="mydb9"; //a remplir
+	private $db_user="myuser9"; //a remplir
+	private $db_pass="mypassword9"; //a remplir
 	
 	
 	function __construct()
