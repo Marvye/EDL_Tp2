@@ -1,5 +1,6 @@
 <?php
 
+//hello
 require 'GumballMachine.php';
 
 class GumballMachineTest extends PHPUnit_Framework_TestCase
@@ -33,23 +34,23 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
     }
     public function testAffichageProfAPI()
     {
-        /*à completer*/
+        /*ï¿½ completer*/
     }
      
     
     public function testAffichageCoursAVI()
     {
-        /*à completer*/
+        /*ï¿½ completer*/
     }
     public function testInsertC()
     {
        
-        /*à completer*/
+        /*ï¿½ completer*/
         
     }
     public function testAffichageCoursAPI()
     {
-        /*à completer*/
+        /*ï¿½ completer*/
     }
 
    
