@@ -125,7 +125,7 @@ class GumballMachine
             {
                $bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
                 //$sql = "INSERT INTO prof (nom, prenom, date_naissance, lieu_naissance) VALUES ('$nom','$prenom', '$date_naissance','$lieu')";
-               $stmt = $bdd->prepare('UPDATE prof SET nom = ?, prenom = ?, date_naissance = ?, lieu = ?  WHERE id = ?');
+               $stmt = $bdd->prepare('UPDATE prof SET nom = ?, prenom = ?, date_naissance = ?, lieu = ?  WHERE id = $id');
                $stmt->execute(array($nom, $prenom, $date_naissance, $lieu, $id));
                return true;
             }
