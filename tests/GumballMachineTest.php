@@ -68,8 +68,8 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
 
 
         $max__id1=$this->gumballMachineInstance->GetLastIDC();
-        $this->assertContains("good job",$this->gumballMachineInstance->InsertC($this->intitule1,$this->duree1,$this->gumballMachineInstance->GetIdP('XXX2','YYY2')));
-        $this->assertContains("good job",$this->gumballMachineInstance->InsertC($this->intitule2,$this->duree2,$this->gumballMachineInstance->GetIdP('XXX1','YYY1')));
+        $this->assertContains("good job",$this->gumballMachineInstance->InsertC($this->intitule1,$this->duree1,$this->gumballMachineInstance->GetIdP('XXX2','yyy2')));
+        $this->assertContains("good job",$this->gumballMachineInstance->InsertC($this->intitule2,$this->duree2,$this->gumballMachineInstance->GetIdP('XXX1','yyy1')));
         //this->assertEquals(true,$this->gumballMachineInstance->InsertP($this->gumballMachineInstance->getDB(),$this->nom2,$this->prenom2,$this->date_naissance2,$this->lieu_naissance2));
         $max__id2=$this->gumballMachineInstance->GetLastIDC();
         $this->assertEquals($max__id1+2,$max__id2);
@@ -81,6 +81,6 @@ class GumballMachineTest extends PHPUnit_Framework_TestCase
 
    public function testUpdateP()
    {
-        $this->gumballMachineInstance->UpdateP($this->gumballMachineInstance->getDB(),'lekemo','Rosabelle','16-11-1999','Douala');
+        $this->gumballMachineInstance->UpdateP($this->gumballMachineInstance->getDB(),'lekemo','Rosabelle','16-11-1999','Douala', GetIdP("XXX1", "yyy1");
    }
 }
