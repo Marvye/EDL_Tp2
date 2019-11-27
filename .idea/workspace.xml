@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c3b554a-8a35-4224-8a59-c32ca9f49c95" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/GumballMachine.php" beforeDir="false" afterPath="$PROJECT_DIR$/GumballMachine.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/GumballMachineTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/GumballMachineTest.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +42,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574235473149</updated>
       <workItem from="1574235534161" duration="617000" />
-      <workItem from="1574841583694" duration="4257000" />
+      <workItem from="1574841583694" duration="4394000" />
     </task>
     <servers />
   </component>
